@@ -6,15 +6,15 @@ const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const { Server } = require('socket.io');
 
-const authRoutes = require('./src/routes/auth');
-const alertRoutes = require('./src/routes/alerts');
-const overlayRoutes = require('./src/routes/overlays');
-const commandRoutes = require('./src/routes/commands');
-const loyaltyRoutes = require('./src/routes/loyalty');
-const webhookRoutes = require('./src/routes/webhooks');
-const errorHandler = require('./src/middleware/errorHandler');
-const { authLimiter, apiLimiter } = require('./src/middleware/rateLimit');
-const SocketManager = require('./src/ws/SocketManager');
+const authRoutes = require('./routes/auth');
+const alertRoutes = require('./routes/alerts');
+const overlayRoutes = require('./routes/overlays');
+const commandRoutes = require('./routes/commands');
+const loyaltyRoutes = require('./routes/loyalty');
+const webhookRoutes = require('./routes/webhooks');
+const errorHandler = require('./middleware/errorHandler');
+const { authLimiter, apiLimiter } = require('./middleware/rateLimit');
+const SocketManager = require('./ws/SocketManager');
 
 const app = express();
 const server = http.createServer(app);

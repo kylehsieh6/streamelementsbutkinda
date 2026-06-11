@@ -16,7 +16,7 @@ export default function NavSidebar() {
   return (
     <aside className="flex w-56 flex-col border-r border-gray-800 bg-gray-900 py-6">
       <div className="px-5 mb-8">
-        <span className="text-lg font-bold text-purple-400">🎮 SEbutkinda</span>
+        <span className="text-lg font-bold text-purple-400">SEbutkinda</span>
       </div>
 
       <nav className="flex-1 space-y-1 px-3">
